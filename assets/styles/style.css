@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    
+    border: 0;
+  
+   
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+body{
+     position: relative;    
+    /* display: flex; */
+   /* flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+main {
+    min-height: 100%;
+    background-image: url(/assets/images/main-imge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 44rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin: -0.5rem; */
+    margin-top: -8rem;
+}
+
+main > div{
+
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+nav > div{
+    background-color: white;
+    width: 200px;
+    height: 50px;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+    
+}
+li{
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+li {
+    text-decoration: none;
+   list-style: none;
+  }
+
+button{
+    background: transparent;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    border: white 2px solid;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    background-color: #0070b8;
+    color: white;
+    padding: 2rem;
+    /* margin: -0.5rem; */
+}
+
+section > h2{
+    text-align: center;
+  
+}
+
+.about{
+    background-color: white;
+    text-align: center;
+    min-height: 100%;
+    background-image: url(/assets/images/banner-sobre-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    height: 25rem;
+    flex-direction: column;
+   
+}
+
+.about > div{
+    width: 50%;
+}
+
+
+.about > div > h2{
+    color: gray;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about > div > .first{
+    color: gray;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5rem;
+}
+.about > div > .second{
+    color: #0070b8;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5rem;
+}
+.about > div > button {
+    border: 1px solid #0070b8;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    padding: .3rem;
+    color: #0070b8;
+    font-weight: bold;
+}
