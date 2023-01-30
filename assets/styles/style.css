@@ -328,13 +328,25 @@ footer > div > ul > li > a{
 footer  > div > img{
     width: 20%;
 }
-a:hover{
+ li > a:hover{
     font-weight: bold;
 
 border-bottom: 2px solid white;}
+.principal-text > div > a > button{
+    cursor: pointer;
+   
+}
+.principal-text > div > a > button:hover{
+    background-color: #0070b8;
+}
+
+
 i:hover{
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #0070b8;}
+    div > ul > li > a:hover{
+        color: #0070b8
+    }
     div > button{
         cursor: pointer;
     }
