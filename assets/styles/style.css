@@ -320,3 +320,86 @@ color: #0070b8;}
 i:hover{
     font-weight: bold;
     color: #0070b8;}
+
+    @media screen and (max-width: 730px){
+        .etapa > div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin-top: 2em;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+        }
+        .etapa {
+            background-color: white;
+            text-align: center;
+            min-height: 100%;
+           
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+            height: 60rem;
+            flex-direction: column;
+        }
+
+        .about {
+            background-color: white;
+            text-align: center;
+            min-height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            place-content: center flex-start;
+            align-items: center;
+            height: 36rem;
+            flex-direction: column;
+        }
+
+        .principal-text > div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .etapa > div > .block::before{
+            display: none;
+        }
+        .etapa > div::before{
+            display: none;
+        }
+nav > ul{
+    display: none;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    width: 100%;
+}
+.about > div {
+    width: 100%;
+}
+li {
+    margin: 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+footer > div > img {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+footer > div > ul > li > a {
+    color: gray;
+    margin-bottom: 1rem;
+}
+    }
