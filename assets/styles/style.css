@@ -81,6 +81,10 @@ a{
     color: white;
     
 }
+.redes-sociais > a {
+    color: grey;
+    margin-left: 1rem;
+}
 li {
     text-decoration: none;
    list-style: none;
@@ -98,7 +102,7 @@ button{
 }
 
 .etapa > button{
-    text-shadow: 0.1em 0.1em 0.2em black;
+    /* text-shadow: 0.1em 0.1em 0.2em black; */
 }
 
 h1{
@@ -207,22 +211,32 @@ section > h2{
 }
 
 
-.etapa > div::before{
+/* .etapa > div::before{
     content: "";
     position: absolute;
     width: 100%;
     border: 1px solid white ;
     left: 0;
     top: .5rem;
-}
+} */
 
 
 .etapa > div > .block{
     margin: 2rem; 
     position: relative;
 }
-
-.etapa > div > .block::before{
+.etapa > div > .block::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    color: white;
+    width: 100%;
+    top: -2.5rem;
+    left: 0;
+    height: 0.2rem;
+}
+    
+.etapa > div > .block::before {
     content: "";
     position: absolute;
     width: 1.3rem;
@@ -231,7 +245,7 @@ section > h2{
     border-radius: 100%;
     background-color: white;
     color: white;
-    top: -2.5rem;
+    top: -3rem;
 }
 
 
@@ -316,11 +330,27 @@ footer  > div > img{
 }
 a:hover{
     font-weight: bold;
-color: #0070b8;}
+
+border-bottom: 2px solid white;}
 i:hover{
     font-weight: bold;
     color: #0070b8;}
-
+    div > button{
+        cursor: pointer;
+    }
+    div > button:hover{
+       background-color:   #00788F;
+    }
+    .about > div > button:hover{
+        color: white;
+    }
+    .etapa > button:hover{
+        cursor: pointer;
+        background-color: white;
+        color: #00788F;
+        border: 1px solid #00788F;
+        font-weight: bold;
+    }
     @media screen and (max-width: 730px){
         .etapa > div {
             display: flex;
@@ -404,5 +434,18 @@ footer > div > img {
 footer > div > ul > li > a {
     color: gray;
     margin-bottom: 1rem;
+}
+button {
+    background: transparent;
+    color: white;
+    font-size: .9rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    border: white 2px solid;
+}
+.principal-text > div {
+    display: flex;
+    flex-direction: row;
 }
     }
