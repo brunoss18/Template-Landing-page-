@@ -352,6 +352,9 @@ i:hover{
         font-weight: bold;
     }
     @media screen and (max-width: 730px){
+        .logo > img{
+            width: 50%;   
+           }
         .etapa > div {
             display: flex;
             width: 100%;
