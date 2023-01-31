@@ -432,6 +432,10 @@ border-bottom: 2px solid black;}
               
             }
     @media screen and (max-width: 730px){
+        .about{
+            
+            padding-bottom: 3rem;
+        }
         .etapa > div > .block{
             
             height: auto;}
