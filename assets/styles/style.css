@@ -17,15 +17,34 @@ html{
     font-family:'Butler_Regular' ; 
 
   }
+  .fadeIn {
+    -webkit-animation: fadeIn 2s ease-in-out;
+    -moz-animation: fadeIn 2s ease-in-out;
+    -o-animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+    }
 
+
+    @-webkit-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; } 
+        }
+        @-moz-keyframes fadeIn {
+        0% { opacity: 0;}
+        100% { opacity: 1; }
+        }
+        @-o-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+        @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
 
 body{
      position: relative;    
-    /* display: flex; */
-   /* flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center; */
+   
     font-family:'Butler_Regular' ; 
 }
 
@@ -85,9 +104,13 @@ a{
     color: white;
     
 }
-.redes-sociais > a {
+.redes-sociais > a{
     color: grey;
+}
+.redes-sociais > a:nth-child(2) {
+    
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 li {
     text-decoration: none;
@@ -103,7 +126,7 @@ button{
     border-radius: 1rem;
     margin: 1rem;
     border: white 2px solid;
-    
+    font-family:'Poppins' !important;
 }
 
 .etapa > a > button:hover{
@@ -165,7 +188,7 @@ section > h2{
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    height: 25rem;
+    height: 26rem;
     flex-direction: column;
    
 }
@@ -200,14 +223,15 @@ section > h2{
     font-size: 1.3rem;
     margin-bottom: 5rem;
 }
-.about > div > button {
-   
+.about > div >  a > button {
+    font-family:'Poppins' !important;
     border: 1px solid #B98E6B;
     border-radius: 1rem;
-    font-size: 1.1rem;
-    padding: .3rem;
-    color: #B98E6B;
+    font-size: 1.3rem;
+    padding: 0.5rem;
    
+    color: #B98E6B;
+  
 }
 
 .etapa{
@@ -388,11 +412,13 @@ border-bottom: 2px solid black;}
     div > button{
         cursor: pointer;
     }
-    div > button:hover{
-       background-color:   #B98E6B;
+   
+    .about > div > a{
+        
     }
-    .about > div > button:hover{
+    .about > div > a > button:hover{
         color: white;
+        background-color: #B98E6B;
     }
     .etapa > button:hover{
         cursor: pointer;
